@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- important meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+
+    <!-- title -->
+    <title>Notes-MarketPlace</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/home/favicon.ico">
+
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    
+    <!-- user profile css -->
+    <link rel="stylesheet" href="css/user-profile.css">
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="65">
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div id="status">&nbsp;</div>
+    </div>
+    <!-- Preloader end -->
+
+    <!-- header -->
+    <header>
+        <nav class="navbar navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="site-nav-wrapper">
+
+                    <div class="navbar-header">
+
+                        <!-- logo -->
+                        <a class="navbar-brand smooth-scroll" href="#home">
+                            <img src="images/home/logo.png" alt="logo">
+                        </a>
+                    </div>
+
+                    <!-- main menu -->
+                    <div class="container-fluid">
+                        <div class="collapse navbar-collapse">
+                            <ul class="nav navbar-nav pull-right">
+                                <li><a class="smooth-scroll" href="#search">Search Notes</a></li>
+                                <li><a class="smooth-scroll" href="#sell-ur-notes">Sell Your Notes</a></li>
+                                <li><a class="smooth-scroll" href="#faq">FAQ</a></li>
+                                <li><a class="smooth-scroll" href="#contact-us">Contact Us</a></li>
+                                <li><a class="smooth-scroll" href=""><img src="images/home/customer-3.png" alt="image"></a></li>
+                                <li><a class="smooth-scroll" href="#home">Logout</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- header end -->
+
+    <!-- user profile home -->
+    <section id="user-profiles">
+
+        <!-- background image -->
+        <img id="up-bg-img" src="images/User-Profile/banner-with-overlay.jpg" alt="image">
+
+        <!-- up content -->
+        <div id="up-content">
+            <div id="up-content-inner" class="container-fluid">
+
+                <div id="up-heading">
+                    <h1>User Profile</h1>
+                </div>
+                
+            </div>
+        </div>
+
+    </section>
+    <!-- up home end -->
+
+    <!-- basic profile -->
+    <section id="basic-profile">
+
+        <div class="content-box-md">
+            <div class="container-fluid">
+
+                <div id="bp-form">
+                    <form>
+                        <h2>Basic Profile Details</h2>
+                        
+                        <div class="row">
+                            
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="text">First Name *</label>
+                                    <input type="text" class="form-control" id="bp-fname" placeholder="Enter your first name">
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="text">Last Name *</label>
+                                    <input type="text" class="form-control" id="bp-lname" placeholder="Enter your last name">
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="email">Email *</label>
+                                    <input type="email" class="form-control" id="bp-email" placeholder="Enter your email address">
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="date">Date Of Birth</label>
+                                    <input type="text" class="form-control" onclick="(this.type='date')" id="bp-dob" placeholder="Enter your date of birth">
+                                    <span><img src="images/User-Profile/calendar.png" alt="caledner"></span>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="gender">Gender</label>
+                                    <select name="gender" class="form-control" id="bp-gender">
+                                        <option selected>Select your gender</option>
+                                        <option>Male</option>
+                                        <option>Female</option>
+                                        <option>Other</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-1">
+                                <div class="form-group">
+                                    <label for="number">Phone Number</label>
+                                    <select name="number" class="form-control" id="bp-pnum">
+                                        <option>+91</option>
+                                        <option>+90</option>
+                                        <option>+69</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-5">
+                                <div class="form-group">
+                                    <label for="text"></label>
+                                    <input type="text" class="form-control" id="bp-number" placeholder="Enter your phone number">
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-6 ">
+                                <div class="form-group">
+                                    <label for="textarea">Profile Picture</label>
+                                    <textarea class="form-control text-center" id="bp-img" placeholder="Upload a picture"></textarea>
+                                    <span><img src="images/User-Profile/upload.png" alt="image"></span>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    <!-- basic profile end -->
+
+    <!-- address details -->
+    <section id="address-detail">
+
+        <div class="content-box-md">
+            <div class="container-fluid">
+
+                <div id="ad-form">
+                    <form>
+                        <h2>Address Details</h2>
+                        
+                        <div class="row">
+                            
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="text">Address Line 1 *</label>
+                                    <input type="text" class="form-control" id="bp-fname" placeholder="Enter your address">
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="text">Address Line 2</label>
+                                    <input type="text" class="form-control" id="bp-fname" placeholder="Enter your address">
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="text">City *</label>
+                                    <input type="text" class="form-control" id="bp-fname" placeholder="Enter your first name">
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="text">State *</label>
+                                    <input type="text" class="form-control" id="bp-fname" placeholder="Enter your first name">
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="text">ZipCode *</label>
+                                    <input type="text" class="form-control" id="bp-fname" placeholder="Enter your first name">
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="text">Country *</label>
+                                    <input type="text" class="form-control" id="bp-fname" placeholder="Enter your first name">
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    <!-- work end -->
+
+    <!-- blog -->
+    <section id="blogs">
+
+        <div class="content-box-md">
+            <div class="container-fluid">
+
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <div class="heading">
+                            <h2>What our Customers are Saying</h2>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row" id="customers">
+
+                    <div class="col-md-6 ">
+
+                        <!-- blog item 01 -->
+                        <div class="blog">
+                            <div class="customer">
+
+                                <div class="row">
+                                    <div class="col-md-2"><img src="images/home/customer-1.png" alt="customer" class="img-responsive img-circle"></div>
+
+                                    <div class="col-md-10">
+                                        <div class="customer-name-des">
+                                            <h3>Walter Meller</h3>
+                                            <h5>Founder &amp; CEO, Matrix Group</h5>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio a maxime amet vel neque adipisci, rerum, quis maiores beatae consequuntur omnis! Tempore officiis saepe soluta obcaecati deserunt iure, nulla odit."</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-6">
+
+                        <!-- blog item 02 -->
+                        <div class="blog">
+                            <div class="customer">
+
+                                <div class="row">
+                                    <div class="col-md-2"><img src="images/home/customer-2.png" alt="customer" class="img-responsive img-circle"></div>
+
+                                    <div class="col-md-10">
+                                        <div class="customer-name-des">
+                                            <h3>Jonnie Riley</h3>
+                                            <h5>Employee, Curious Snakcs</h5>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio a maxime amet vel neque adipisci, rerum, quis maiores beatae consequuntur omnis! Tempore officiis saepe soluta obcaecati deserunt iure, nulla odit."</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-6 ">
+
+                        <!-- blog item 03 -->
+                        <div class="blog">
+                            <div class="customer">
+
+                                <div class="row">
+                                    <div class="col-md-2"><img src="images/home/customer-3.png" alt="customer" class="img-responsive img-circle"></div>
+
+                                    <div class="col-md-10">
+                                        <div class="customer-name-des">
+                                            <h3>Amilia Luna</h3>
+                                            <h5>Teacher, Saint Joseph High School</h5>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio a maxime amet vel neque adipisci, rerum, quis maiores beatae consequuntur omnis! Tempore officiis saepe soluta obcaecati deserunt iure, nulla odit."</p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-6">
+
+                        <!-- blog item 04 -->
+                        <div class="blog">
+                            <div class="customer">
+
+                                <div class="row">
+                                    <div class="col-md-2"><img src="images/home/customer-4.png" alt="customer" class="img-responsive img-circle"></div>
+
+                                    <div class="col-md-10">
+                                        <div class="customer-name-des">
+                                            <h3>Daniel Cardos</h3>
+                                            <h5>Software Engineer, Infinitum Company</h5>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio a maxime amet vel neque adipisci, rerum, quis maiores beatae consequuntur omnis! Tempore officiis saepe soluta obcaecati deserunt iure, nulla odit."</p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+    <!-- blog end -->
+
+    <!-- footer -->
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 text-left">
+                    <p>Copyright &copy; TatvaSoft All rights reserved.</p>
+                </div>
+
+                <div class="col-md-6 text-right">
+                    <ul class="social-list">
+                        <li><a href="#"><img src="images/home/facebook.png"></a></li>
+                        <li><a href="#"><img src="images/home/twitter.png"></a></li>
+                        <li><a href="#"><img src="images/home/linkedin.png"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+    <!-- jquery -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+
+    <!-- bootstrap js -->
+    <script src="js/bootstrap/bootstrap.min.js"></script>
+
+    <!-- custom js -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
